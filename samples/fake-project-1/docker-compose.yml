@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  http-echo:
+    image: jmalloc/echo-server
+    environment:
+      LOG_HTTP_BODY: 1
+    ports:
+      - 8080:8080
