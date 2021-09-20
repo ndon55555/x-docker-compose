@@ -20,12 +20,9 @@ if __name__ == "__main__":
     )
     args, unknown_args = parser.parse_known_args()
 
-    compose_override = {
-        "version": "3.8"
-    }
+    compose_override = {}
     if args.net:
         compose_override = {
-            "version": "3.8",
             "networks": {"default": {"name": args.net}},
         }
 
